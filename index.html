@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE CANIEDO | BSIT Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <h1 class="logo">
+                <a href="#hero"><span class="logo-accent">ACE</span> <span class="logo-wine">CANIEDO</span></a>
+            </h1>
+
+            <div class="header-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme">
+                    <i class="ri-sun-line" aria-hidden="true"></i>
+                </button>
+
+                <nav class="nav-menu desktop-nav">
+                    <a href="#about">About</a>
+                    <a href="#tech-stack">Tech</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <button id="nav-toggle" class="nav-toggle" aria-controls="mobile-nav" aria-expanded="false">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+        
+        <nav id="mobile-nav" class="nav-menu mobile-nav">
+            <button id="mobile-nav-close" class="mobile-nav-close" aria-label="Close mobile navigation">
+                <i class="ri-close-line"></i>
+            </button>
+            <a href="#about">About</a>
+            <a href="#tech-stack">Tech</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="subtitle accent">2nd Year BS Information Technology</p>
+                    <h1 id="hero-h1"></h1>
+                    <p class="tagline"><i>A lazy grade conscious. I build web things, love to explore, love music & games.</i></p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">See Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-avatar-container">
+                    <div class="hero-avatar-placeholder">
+                        <img src="pfp.jpg" alt="profile">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section fade-in">
+            <div class="container">
+                <h2 class="section-title fade-in">✨ About Me</h2>
+                <p class="bio fade-in">
+                    I'm a 2nd-year BSIT student focused on frontend development. I'm comfortable with HTML, CSS, JavaScript, Git, and GitHub, and I'm always looking to merge my technical skills with my passion for creativity.
+                </p>
+                <div class="badges fade-in">
+                    <span class="badge scale-in"><i class="ri-headphone-fill"></i> Music Enthusiast</span>
+                    <span class="badge scale-in"><i class="ri-gamepad-fill"></i> Gaming Fan</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech-stack" class="section fade-in">
+            <div class="container">
+                <h2 class="section-title fade-in">⚙️ Tech Stack</h2>
+                <div class="tech-grid fade-in">
+                    <div class="tech-item scale-in">
+                        <i class="ri-html5-fill icon-large"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="tech-item scale-in">
+                        <i class="ri-css3-fill icon-large"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="tech-item scale-in">
+                        <i class="ri-javascript-fill icon-large"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="tech-item scale-in">
+                        <i class="ri-git-branch-line icon-large"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="tech-item scale-in">
+                        <i class="ri-github-fill icon-large"></i>
+                        <p>GitHub</p>
+                    </div>
+                </div>
+                <p class="tech-caption fade-in">
+                    Comfortable with frontend fundamentals and version control using Git and GitHub. Currently learning ReactJs and Laravel!
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section fade-in">
+            <div class="container">
+                <h2 class="section-title fade-in">💻 Projects Showcase</h2>
+                <div class="project-grid fade-in">
+                    <article class="project-card featured-card scale-in" tabindex="0">
+                        <div class="project-image-container">
+                            <img src="clan.png" alt="Call of Duty Clan" class="project-image">
+                        </div>
+                        <h3 class="project-title accent">Call of Duty Clan</h3>
+                        <p class="project-description"><i>A simple website I created for our clan</i></p>
+                        <div class="project-tags">
+                            <span>Tournament</span><span>Friends</span><span>Rank</span><span>Scrim</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mil-fleurs-clan.vercel.app/" class="btn-link" target="_blank" rel="noopener noreferrer">Live site<i class="ri-link"></i></a>
+                            <a href="https://github.com/shimzsza/MILFCLAN" class="btn-link" target="_blank" rel="noopener noreferrer">Source code <i class="ri-github-line"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card scale-in" tabindex="0">
+                        <div class="project-image-container">
+                            <img src="fast.png" alt="Kahit saan g project" class="project-image">
+                        </div>
+                        <h3 class="project-title">Kahit saan g</h3>
+                        <p class="project-description"><i>A simple food web for undecided people</i></p>
+                        <div class="project-tags"><span>Eat</span><span>Couples</span><span>Food</span></div>
+                        <div class="project-links">
+                            <a href="https://khtsg.netlify.app/" class="btn-link" target="_blank" rel="noopener noreferrer">Live site <i class="ri-link"></i></a>
+                            <a href="https://github.com/shimzsza/Fast" class="btn-link" target="_blank" rel="noopener noreferrer">Source code <i class="ri-github-line"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="project-card featured-card scale-in" tabindex="0">
+                        <div class="project-image-container">
+                            <img src="watch.png" alt="watch" class="project-image">
+                        </div>
+                        <h3 class="project-title accent">MP4 Player</h3>
+                        <p class="project-description"><i>A simple mp4 player using simple html css and js</i></p>
+                        <div class="project-tags">
+                            <span>Anime</span><span>Movies</span><span>Binge watch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://shimzsza.github.io/watch/" class="btn-link" target="_blank" rel="noopener noreferrer">Live site<i class="ri-link"></i></a>
+                            <a href="https://github.com/shimzsza/watch" class="btn-link" target="_blank" rel="noopener noreferrer">Source code <i class="ri-github-line"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section fade-in">
+            <div class="container">
+                <h2 class="section-title fade-in">📚 Education</h2>
+                <div class="timeline fade-in">
+                    <div class="timeline-item slide-in-left">
+                        <div class="timeline-icon"><i class="ri-graduation-cap-fill"></i></div>
+                        <div class="timeline-content">
+                            <h3 class="accent">BS Information Technology </h3>
+                            <p class="institution">Arellano University- Jose Abad Santos</p>
+                            <p class="years">2023 – Expected 2027</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item slide-in-right">
+                        <div class="timeline-icon"><i class="ri-book-2-fill"></i></div>
+                        <div class="timeline-content">
+                            <h3>Senior High School - Accountancy and Bussiness Management</h3>
+                            <p class="institution">ST. THEODORE SCHOOL INC.</p>
+                            <p class="years">2021 – 2023</p>
+                            <p class="note">Notable Achievements: Academic Excellence Award, Robotics Club Member. Math olympiad 1st placer, Best research group 2023.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item slide-in-left">
+                        <div class="timeline-icon"><i class="ri-medal-fill"></i></div>
+                        <div class="timeline-content">
+                            <h3>Junior High School</h3>
+                            <p class="institution">ST. THEODORE SCHOOL INC.</p>
+                            <p class="years">2017 – 2021</p>
+                            <p class="note">Notable Achievements: Academic Excellence Award, Math olympiad champion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section fade-in">
+            <div class="container">
+                <h2 class="section-title fade-in">📸 Snapshot</h2>
+                <div class="slideshow-container fade-in">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="pfp.jpg" style="width:100%" alt="Profile">
+                        <div class="text">pogi</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="pic1.jpg" style="width:100%" alt="Pic 1">
+                        <div class="text">pogi</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="pic2.jpg" style="width:100%" alt="Pic 2">
+                        <div class="text">yum</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section fade-in">
+            <div class="container">
+                <h2 class="section-title fade-in">✉️ Get In Touch</h2>
+                <form id="contact-form" class="contact-form fade-in">
+                    <p>I'm open to quick chats about tech, music, or gaming!</p>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="What's on your mind?"></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="fallback-note">**This doesn't have a php yet I'm working on it**</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="thankyou-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <h2>Thank You!</h2>
+            <p>Your message has been sent successfully. I'll get back to you soon!</p>
+        </div>
+    </div>
+
+    <footer class="footer fade-in">
+        <div class="container footer-content">
+            <div class="social-links fade-in">
+                <a href="https://github.com/shimzsza" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="ri-github-fill"></i></a>
+                <a href="https://www.facebook.com/azsij" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i class="ri-facebook-box-fill"></i></a>
+                <a href="https://www.instagram.com/azeednd?igsh=Z2huOGt6ZG1yYTFj" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i class="ri-instagram-fill"></i></a>
+                <a href="https://www.tiktok.com/@shimizu0114?_r=1&_t=ZS-91rSQm6CnBP" target="_blank" rel="noopener noreferrer" aria-label="TikTok Profile"><i class="ri-tiktok-fill"></i></a>
+            </div>
+            <p>&copy; 2025 Caniedo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
